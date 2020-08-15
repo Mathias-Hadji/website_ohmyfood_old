@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -16,20 +17,23 @@
 }
 
 .grid {
+  align-items: center;
   font-size: 2em;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 30px;
   margin-bottom: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
+}
+.grid .row {
+  display: flex;
+  flex-direction: row;
 }
 .grid .menu-prev {
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  margin: 30px;
   height: 500px;
   width: 350px;
   justify-content: center;
