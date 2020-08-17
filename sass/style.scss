@@ -7,33 +7,44 @@ $green-color: #218c74;
     padding: 0;
 }
 
+
+
 .header{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: $green-color;
-    height: 150px;
+    height: 120px;
 
     .header__heading{
         color: $orange-color;
-        font-size: 4em;
+        font-size: 3em;
         font-family: 'Inter', sans-serif;
     }
 }
 
 
-.grid{
-    align-items: center;
-    font-size: 2em;
+.main_container{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.grid{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    font-size: 2em;
     margin-top: 30px;
     margin-bottom: 30px;
 
     .row{
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         flex-direction: row;
     }
 
@@ -50,12 +61,46 @@ $green-color: #218c74;
         box-shadow: 0px 0px 9px 3px rgba(217,217,217,1);
     }
 
+    
+    .menu-prev__heading{
+        font-size: 0.8em; 
+    }
+
+    .menu-prev__byline{
+        font-size: 1.5em;
+    }
+
+
     .menu-prev--1{
         background: rgb(252, 215, 206)
     }
 
+
+
+    .menu-prev__icon{
+        font-size: 50px;
+    }
+
+    .menu-prev__icon--menu1{
+        background-image: linear-gradient(90deg, rgba(194,0,0,1) 0%, rgba(235,127,3,1) 100%, rgba(255,203,190,1) 100%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    .menu-prev_byline--menu1{
+        font-family: 'Sriracha', cursive;
+        text-transform: uppercase;
+        color: #331800;
+        font-size: 1.5em;
+    }
+
     .menu-prev--2{
         background: rgb(255, 243, 249)
+    }
+
+    .menu-prev_byline--menu3{
+        font-family: 'Sriracha', cursive;
+        text-transform: uppercase;
     }
 
     .menu-prev--3{
@@ -63,59 +108,60 @@ $green-color: #218c74;
     }
 
 
-    .menu-prev__heading{
-        font-size: 1em;
-    }
 
-    .menu-prev__heading--note{
+    .menu-prev__heading--title1{
         font-family: 'Oleo Script', cursive;
+        color: #331800;
     }
 
   
-    .menu-prev__heading--chic{
-        font-family: 'Oleo Script', cursive;
+    .menu-prev__heading--title2{
+        font-family: 'Rochester', cursive;
         background: linear-gradient(90deg, rgba(245,119,0,1) 0%, rgba(179,93,1,1) 29%, rgba(91,49,191,1) 100%);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
     }
 
-    .menu-prev__byline--orange{
+    .menu-prev__byline--menu2{
         color:#e67e22;
+        font-weight: bold;
     }
 
-    .menu-prev__heading--delice{
+    .menu-prev__heading--title3{
         font-family: 'Dancing Script', cursive;
         background: linear-gradient(90deg, rgba(0,4,103,1) 0%, rgba(0,254,255,1) 100%, rgba(91,49,191,1) 100%);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
     }
 
-    .menu-prev__byline--blue{
+    .menu-prev__byline--menu3{
         color:#3498db;
+        font-family: 'Kalam', cursive;
     }
 
-    .menu-prev__heading--palette{
+    .menu-prev__heading--title4{
         font-family: 'Kaushan Script', cursive;
         background: linear-gradient(90deg, rgba(0,68,4,1) 0%, rgba(191,255,190,1) 100%, rgba(0,111,33,1) 100%);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
     }
 
-    .menu-prev__byline--green{
+    .menu-prev__byline--menu4{
         color: #27ae60;
+        font-family: 'Kalam', cursive;
     }
 
 }
 
 .work-in-progress{
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 
     .work-in-progress__button{
-        font-size: 2em;
+        font-size: 1em;
         color: $orange-color;
         background: $green-color;
         border-radius: 10px;
@@ -126,15 +172,24 @@ $green-color: #218c74;
 }
 
 .footer{
-    height: 80px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
     background: $green-color;
     display: flex;
-    justify-content: center;
     align-items: center;
     color: $orange-color;
-    font-size: 1.8em;
+    font-size: 1.5em;
     justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
     font-family: Arial, Helvetica, sans-serif;
+
+    .legal{
+        margin-left: 20px;
+    }
+
+    .contact{
+        margin-right: 20px;
+    }
 }

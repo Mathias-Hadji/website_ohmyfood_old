@@ -8,26 +8,34 @@
   justify-content: center;
   align-items: center;
   background-color: #218c74;
-  height: 150px;
+  height: 120px;
 }
 .header .header__heading {
   color: #f1c40f;
-  font-size: 4em;
+  font-size: 3em;
   font-family: "Inter", sans-serif;
 }
 
-.grid {
-  align-items: center;
-  font-size: 2em;
+.main_container {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  align-items: center;
+}
+
+.grid {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  font-size: 2em;
   margin-top: 30px;
   margin-bottom: 30px;
 }
 .grid .row {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   flex-direction: row;
 }
 .grid .menu-prev {
@@ -42,58 +50,83 @@
   -moz-box-shadow: 0px 0px 9px 3px #d9d9d9;
   box-shadow: 0px 0px 9px 3px #d9d9d9;
 }
+.grid .menu-prev__heading {
+  font-size: 0.8em;
+}
+.grid .menu-prev__byline {
+  font-size: 1.5em;
+}
 .grid .menu-prev--1 {
   background: #fcd7ce;
+}
+.grid .menu-prev__icon {
+  font-size: 50px;
+}
+.grid .menu-prev__icon--menu1 {
+  background-image: linear-gradient(90deg, #c20000 0%, #eb7f03 100%, #ffcbbe 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.grid .menu-prev_byline--menu1 {
+  font-family: "Sriracha", cursive;
+  text-transform: uppercase;
+  color: #331800;
+  font-size: 1.5em;
 }
 .grid .menu-prev--2 {
   background: #fff3f9;
 }
+.grid .menu-prev_byline--menu3 {
+  font-family: "Sriracha", cursive;
+  text-transform: uppercase;
+}
 .grid .menu-prev--3 {
   background: #f0f0f0;
 }
-.grid .menu-prev__heading {
-  font-size: 1em;
-}
-.grid .menu-prev__heading--note {
+.grid .menu-prev__heading--title1 {
   font-family: "Oleo Script", cursive;
+  color: #331800;
 }
-.grid .menu-prev__heading--chic {
-  font-family: "Oleo Script", cursive;
+.grid .menu-prev__heading--title2 {
+  font-family: "Rochester", cursive;
   background: linear-gradient(90deg, #f57700 0%, #b35d01 29%, #5b31bf 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
-.grid .menu-prev__byline--orange {
+.grid .menu-prev__byline--menu2 {
   color: #e67e22;
+  font-weight: bold;
 }
-.grid .menu-prev__heading--delice {
+.grid .menu-prev__heading--title3 {
   font-family: "Dancing Script", cursive;
   background: linear-gradient(90deg, #000467 0%, #00feff 100%, #5b31bf 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
-.grid .menu-prev__byline--blue {
+.grid .menu-prev__byline--menu3 {
   color: #3498db;
+  font-family: "Kalam", cursive;
 }
-.grid .menu-prev__heading--palette {
+.grid .menu-prev__heading--title4 {
   font-family: "Kaushan Script", cursive;
   background: linear-gradient(90deg, #004404 0%, #bfffbe 100%, #006f21 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
-.grid .menu-prev__byline--green {
+.grid .menu-prev__byline--menu4 {
   color: #27ae60;
+  font-family: "Kalam", cursive;
 }
 
 .work-in-progress {
   margin-top: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .work-in-progress .work-in-progress__button {
-  font-size: 2em;
+  font-size: 1em;
   color: #f1c40f;
   background: #218c74;
   border-radius: 10px;
@@ -103,17 +136,24 @@
 }
 
 .footer {
-  height: 80px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
   background: #218c74;
   display: flex;
-  justify-content: center;
   align-items: center;
   color: #f1c40f;
-  font-size: 1.8em;
+  font-size: 1.5em;
   justify-content: space-between;
-  padding-left: 30px;
-  padding-right: 30px;
   font-family: Arial, Helvetica, sans-serif;
+}
+.footer .legal {
+  margin-left: 20px;
+}
+.footer .contact {
+  margin-right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
