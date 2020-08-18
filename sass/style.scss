@@ -1,6 +1,20 @@
-$orange-color: #f1c40f;
-$green-color: #218c74;
 
+/* Variable */
+
+$color-text-primary: #f1c40f;
+$color-primary: #218c74;
+
+
+/* Mixin */
+
+@mixin boxshadow-menu () {
+    -webkit-box-shadow: 0px 0px 9px 3px rgba(217,217,217,1);
+    -moz-box-shadow: 0px 0px 9px 3px rgba(217,217,217,1);
+    box-shadow: 0px 0px 9px 3px rgba(217,217,217,1);
+}
+
+
+/* Reset */
 
 *{
     margin: 0;
@@ -8,21 +22,24 @@ $green-color: #218c74;
 }
 
 
+/* SECTION HEADER */
 
 .header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $green-color;
+    background-color: $color-primary;
     height: 120px;
 
-    .header__heading{
-        color: $orange-color;
+    &__heading{
+        color: $color-text-primary;
         font-size: 3em;
         font-family: 'Inter', sans-serif;
     }
 }
 
+
+/* SECTION CONTENANT LES MENUS */
 
 .main_container{
     display: flex;
@@ -30,146 +47,157 @@ $green-color: #218c74;
     align-items: center;
 }
 
-
 .grid{
-    width: 70%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 2em;
     margin-top: 30px;
     margin-bottom: 30px;
+    font-size: 2em;
+}
 
-    .row{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        flex-direction: row;
-    }
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
 
-    .menu-prev{
-        display: flex;
-        flex-direction: column;
-        margin: 30px;
-        height: 500px;
-        width: 350px;
-        justify-content: center;
-        align-items: center;
-        -webkit-box-shadow: 0px 0px 9px 3px rgba(217,217,217,1);
-        -moz-box-shadow: 0px 0px 9px 3px rgba(217,217,217,1);
-        box-shadow: 0px 0px 9px 3px rgba(217,217,217,1);
-    }
+/* BLOC MENU GENERIQUE */
 
-    
-    .menu-prev__heading{
-        font-size: 0.8em; 
-    }
-
-    .menu-prev__byline{
-        font-size: 1.5em;
-    }
-
-
-    .menu-prev--1{
-        background: rgb(252, 215, 206)
-    }
-
+.menu-prev{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    height: 500px;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    background:white;
+    @include boxshadow-menu;
 
 
     .menu-prev__icon{
         font-size: 50px;
+        color: grey;
     }
 
-    .menu-prev__icon--menu1{
-        background-image: linear-gradient(90deg, rgba(194,0,0,1) 0%, rgba(235,127,3,1) 100%, rgba(255,203,190,1) 100%);
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
+    h1{
+        font-size: 0.8em; 
     }
 
-    .menu-prev_byline--menu1{
-        font-family: 'Sriracha', cursive;
-        text-transform: uppercase;
-        color: #331800;
+    p{
         font-size: 1.5em;
     }
-
-    .menu-prev--2{
-        background: rgb(255, 243, 249)
-    }
-
-    .menu-prev_byline--menu3{
-        font-family: 'Sriracha', cursive;
-        text-transform: uppercase;
-    }
-
-    .menu-prev--3{
-        background: rgb(240, 240, 240)
-    }
+}
 
 
 
-    .menu-prev__heading--title1{
+
+/* BLOC MENU 1 */
+
+.menu-prev--menu1{
+    background: rgb(252, 215, 206);
+
+    h1{
         font-family: 'Oleo Script', cursive;
         color: #331800;
     }
 
-  
-    .menu-prev__heading--title2{
+    p{
+        font-family: 'Sriracha', cursive;
+        text-transform: uppercase;
+        color: #331800;
+    }
+}
+
+
+
+/* BLOC MENU 2 */
+
+
+.menu-prev--menu2{
+    background: rgb(255, 243, 249);
+
+    h1{
         font-family: 'Rochester', cursive;
         background: linear-gradient(90deg, rgba(245,119,0,1) 0%, rgba(179,93,1,1) 29%, rgba(91,49,191,1) 100%);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
     }
 
-    .menu-prev__byline--menu2{
+    p{
         color:#e67e22;
         font-weight: bold;
     }
+}
 
-    .menu-prev__heading--title3{
+
+/* BLOC MENU 3 */
+
+.menu-prev--menu3{
+    background: rgb(240, 240, 240);
+
+    h1{
         font-family: 'Dancing Script', cursive;
         background: linear-gradient(90deg, rgba(0,4,103,1) 0%, rgba(0,254,255,1) 100%, rgba(91,49,191,1) 100%);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
     }
 
-    .menu-prev__byline--menu3{
+    p{
         color:#3498db;
         font-family: 'Kalam', cursive;
+        font-family: 'Sriracha', cursive;
     }
+}
 
-    .menu-prev__heading--title4{
+
+/* BLOC MENU 4 */
+
+.menu-prev--menu4{
+
+    h1{
         font-family: 'Kaushan Script', cursive;
         background: linear-gradient(90deg, rgba(0,68,4,1) 0%, rgba(191,255,190,1) 100%, rgba(0,111,33,1) 100%);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
     }
 
-    .menu-prev__byline--menu4{
+    p{
         color: #27ae60;
         font-family: 'Kalam', cursive;
     }
-
 }
 
-.work-in-progress{
-    margin-top: 30px;
-    margin-bottom: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    .work-in-progress__button{
-        font-size: 1em;
-        color: $orange-color;
-        background: $green-color;
-        border-radius: 10px;
-        padding: 15px 60px;
-        border: solid 1px $green-color;
-        font-family:'Roboto', sans-serif;
+/* SECTION BOUTON PROCHAINEMENT */
+
+/* BOUTON GENERIQUE */
+
+.btn{
+    color: $color-text-primary;
+    background: $color-primary;
+    font-size: 1em;
+    border-radius: 10px;
+    padding: 15px 60px;
+    border: transparent;
+    font-family:'Roboto', sans-serif;
+}
+
+/* BOUTON PROCHAINEMENT */
+
+
+.btn-workinprogress{
+        margin-top: 50px;
+        margin-bottom: 70px;
     }
-}
+
+
+
+/* SECTION FOOTER */
 
 .footer{
     position: fixed;
@@ -177,10 +205,10 @@ $green-color: #218c74;
     bottom: 0;
     width: 100%;
     height: 60px;
-    background: $green-color;
+    background: $color-primary;
     display: flex;
     align-items: center;
-    color: $orange-color;
+    color: $color-text-primary;
     font-size: 1.5em;
     justify-content: space-between;
     font-family: Arial, Helvetica, sans-serif;
