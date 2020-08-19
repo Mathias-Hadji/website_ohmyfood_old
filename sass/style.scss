@@ -2,7 +2,7 @@
 /* Variable */
 
 $color-text-primary: #f1c40f;
-$color-primary: #218c74;
+$bg-primary: #218c74;
 
 
 /* Mixin */
@@ -21,6 +21,13 @@ $color-primary: #218c74;
     padding: 0;
 }
 
+/* BODY */
+
+body{
+    background:white;
+    font-family: sans-serif;
+}
+
 
 /* SECTION HEADER */
 
@@ -28,7 +35,7 @@ $color-primary: #218c74;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $color-primary;
+    background-color: $bg-primary;
     height: 120px;
 
     &__heading{
@@ -55,7 +62,6 @@ $color-primary: #218c74;
     justify-content: center;
     margin-top: 30px;
     margin-bottom: 30px;
-    font-size: 2em;
 }
 
 .row{
@@ -78,21 +84,29 @@ $color-primary: #218c74;
     background:white;
     @include boxshadow-menu;
 
+    .menu-prev__heading{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
+        h1{
+            font-size: 1.8em;
+        }
+    }
+    
     .menu-prev__icon{
+        display: flex;
         font-size: 50px;
         color: grey;
-    }
-
-    h1{
-        font-size: 0.8em; 
+        justify-content: center;
     }
 
     p{
-        font-size: 1.5em;
+        font-size:3em;
     }
-}
 
+
+}
 
 
 
@@ -179,7 +193,7 @@ $color-primary: #218c74;
 
 .btn{
     color: $color-text-primary;
-    background: $color-primary;
+    background: $bg-primary;
     font-size: 1em;
     border-radius: 10px;
     padding: 15px 60px;
@@ -191,9 +205,10 @@ $color-primary: #218c74;
 
 
 .btn-workinprogress{
+        font-size: 2em;
         margin-top: 50px;
         margin-bottom: 70px;
-    }
+}
 
 
 
@@ -205,7 +220,7 @@ $color-primary: #218c74;
     bottom: 0;
     width: 100%;
     height: 60px;
-    background: $color-primary;
+    background: $bg-primary;
     display: flex;
     align-items: center;
     color: $color-text-primary;

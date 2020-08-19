@@ -1,0 +1,19 @@
+@import "style.scss";
+
+.main_title{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    font-size: 2em;
+    font-weight: bold;
+
+}
+
+
+
+.menu-prev{
+    p{
+        font-size:1em;
+        text-transform: none;
+    }
+}

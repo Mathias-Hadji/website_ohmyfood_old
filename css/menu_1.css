@@ -180,4 +180,17 @@ body {
   margin-right: 20px;
 }
 
-/*# sourceMappingURL=style.css.map */
+.main_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.menu-prev p {
+  font-size: 1em;
+  text-transform: none;
+}
+
+/*# sourceMappingURL=menu_1.css.map */
