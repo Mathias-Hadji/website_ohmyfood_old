@@ -64,19 +64,17 @@ body {
   -moz-box-shadow: 0px 0px 9px 3px #d9d9d9;
   box-shadow: 0px 0px 9px 3px #d9d9d9;
 }
-.menu-prev .menu-prev__heading {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.menu-prev .menu-prev__heading h1 {
-  font-size: 1.8em;
-}
 .menu-prev .menu-prev__icon {
   display: flex;
   font-size: 50px;
-  color: grey;
   justify-content: center;
+  margin: 10px;
+  background: linear-gradient(90deg, #f57700 0%, #b35d01 29%, #5b31bf 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.menu-prev h1 {
+  font-size: 1.8em;
 }
 .menu-prev p {
   font-size: 3em;
@@ -180,17 +178,81 @@ body {
   margin-right: 20px;
 }
 
-.main_title {
+.main-container-menu {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 150px;
+}
+.main-container-menu .main-container-menu__headline {
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.main-container-menu .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 80px;
+  height: 800px;
+  width: 800px;
+  -webkit-box-shadow: 0px 0px 9px 3px #d9d9d9;
+  -moz-box-shadow: 0px 0px 9px 3px #d9d9d9;
+  box-shadow: 0px 0px 9px 3px #d9d9d9;
+  background: #fcd7ce;
+}
+.main-container-menu .menu .menu-prev__icon--menu1 {
+  display: flex;
+  font-size: 50px;
+  justify-content: center;
+  margin: 10px;
+  background: linear-gradient(90deg, #f57700 0%, #b35d01 29%, #5b31bf 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 4em;
+}
+.main-container-menu .menu h1 {
+  font-family: "Oleo Script", cursive;
+  color: #331800;
   font-size: 2em;
+  text-align: center;
+}
+.main-container-menu .menu .meals {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.main-container-menu .menu .meals .meals__meal-separation {
+  display: flex;
+  flex-direction: row;
+  font-family: "Sriracha", cursive;
+  color: #331800;
+  justify-content: center;
+  font-size: 1.4em;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+.main-container-menu .menu .meal-item {
+  display: flex;
+  flex-direction: row;
+  font-family: "Sriracha", cursive;
+  color: #331800;
+  justify-content: space-between;
+}
+.main-container-menu .menu .meal-item .meal-item__price {
   font-weight: bold;
 }
-
-.menu-prev p {
-  font-size: 1em;
-  text-transform: none;
+.main-container-menu .menu .name-restaurant {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main-container-menu .menu .name-restaurant .menu-prev__icon--menu1 {
+  font-size: 3em;
 }
 
 /*# sourceMappingURL=menu_1.css.map */
