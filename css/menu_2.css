@@ -282,9 +282,6 @@ body {
 .main-container-menu .menu .meals .meal-items .meal-item .meal-item__name {
   margin: 5px;
 }
-.main-container-menu .menu .meals .meal-items .meal-item .meal-item__price {
-  font-weight: bold;
-}
 .main-container-menu .menu .name-restaurant-inline {
   display: flex;
   flex-direction: row;
@@ -310,4 +307,4 @@ body {
   text-align: center;
 }
 
-/*# sourceMappingURL=menu_1.css.map */
+/*# sourceMappingURL=menu_2.css.map */
