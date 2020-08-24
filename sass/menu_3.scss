@@ -1,0 +1,73 @@
+@import "menu_1.scss";
+
+
+.main-container-menu{
+    p{
+        font-family: 'Kalam', cursive;
+        font-weight: normal;
+    }
+}
+
+
+/* COULEUR DE FOND ET TITRES DU MENU */
+
+.main-container-menu{
+    .menu{
+        background: rgb(240, 240, 240);
+
+        .name-restaurant{
+            h1{
+                font-family: 'Dancing Script', cursive;
+                background: linear-gradient(90deg, rgba(0,4,103,1) 0%, rgba(0,254,255,1) 100%, rgba(91,49,191,1) 100%);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                font-size: 4em;
+            }
+        }
+    }
+}
+
+
+/* PARTIES DU MENU GENERIQUE */
+
+
+.main-container-menu{
+    .menu{
+        .meals{
+            .meal-separation{
+                width: 100%;           
+            }
+        }
+    }
+}
+
+
+/* COULEURS DES LIGNES DE SEPARATION */
+
+.main-container-menu{
+    .menu{
+        .meals--1{
+            .meal-separation{
+                .meal-separation__line{
+                    filter: invert(6%) sepia(55%) saturate(5133%) hue-rotate(244deg) brightness(86%) contrast(100%);
+                }
+            }
+        }
+        .meals--2{
+            .meal-separation{
+                .meal-separation__line{
+                    filter: invert(18%) sepia(69%) saturate(4593%) hue-rotate(247deg) brightness(85%) contrast(95%);
+                }
+            }
+        }
+        .meals--3{
+            .meal-separation{
+                .meal-separation__line{
+                    filter: invert(55%) sepia(39%) saturate(719%) hue-rotate(137deg) brightness(91%) contrast(102%);
+                }
+            }
+        }
+    }
+}
+
+

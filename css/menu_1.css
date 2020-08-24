@@ -27,7 +27,7 @@ body {
 }
 
 /* SECTION CONTENANT LES MENUS */
-.main_container {
+.main-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -129,7 +129,6 @@ body {
 .menu-prev--menu3 p {
   color: #3498db;
   font-family: "Kalam", cursive;
-  font-family: "Sriracha", cursive;
 }
 
 /* BLOC MENU 4 */
@@ -178,10 +177,10 @@ body {
   justify-content: space-between;
   font-family: Arial, Helvetica, sans-serif;
 }
-.footer .legal {
+.footer .footer__legal {
   margin-left: 20px;
 }
-.footer .contact {
+.footer .footer__contact {
   margin-right: 20px;
 }
 
@@ -239,7 +238,7 @@ body {
 }
 .main-container-menu .menu .name-restaurant h1 {
   font-size: 1em;
-  font-family: "Oleo Script", cursive;
+  font-family: "Sriracha", cursive;
   color: #331800;
   font-size: 2em;
   text-align: center;
@@ -251,23 +250,23 @@ body {
   align-items: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  font-family: "Sriracha", cursive;
+  color: #331800;
 }
-.main-container-menu .menu .meals .meals__meal-separation {
+.main-container-menu .menu .meals .meal-separation {
   width: 80%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  font-family: "Sriracha", cursive;
-  color: #331800;
   font-size: 1.4em;
   margin-bottom: 20px;
   justify-content: space-between;
   align-items: center;
 }
-.main-container-menu .menu .meals .meals__meal-separation .line-separation {
+.main-container-menu .menu .meals .meal-separation .meal-separation__line {
   width: 250px;
   height: 20px;
-  color: #331800;
+  filter: invert(10%) sepia(50%) saturate(2492%) hue-rotate(19deg) brightness(93%) contrast(102%);
 }
 .main-container-menu .menu .meals .meal-items {
   display: flex;
@@ -279,8 +278,6 @@ body {
   width: 100%;
   display: flex;
   flex-direction: row;
-  font-family: "Sriracha", cursive;
-  color: #331800;
   justify-content: space-between;
 }
 .main-container-menu .menu .meals .meal-items .meal-item .meal-item__name {

@@ -56,7 +56,7 @@
 
             h1{
                 font-size: 1em;
-                font-family: 'Oleo Script', cursive;
+                font-family: 'Sriracha', cursive;
                 color: #331800; 
                 font-size: 2em;
                 text-align: center;
@@ -71,23 +71,24 @@
             align-items: center;
             margin-top:20px;
             margin-bottom: 20px;
+            font-family: 'Sriracha', cursive;
+            color: #331800;
 
-            .meals__meal-separation{
+            .meal-separation{
                 width: 80%;
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                font-family: 'Sriracha', cursive;
-                color: #331800;
+
                 font-size: 1.4em;
                 margin-bottom: 20px;
                 justify-content: space-between;
                 align-items: center;
 
-                .line-separation{
+                .meal-separation__line{
                     width: 250px;
                     height: 20px;
-                    color: #331800;
+                    filter: invert(10%) sepia(50%) saturate(2492%) hue-rotate(19deg) brightness(93%) contrast(102%);
                 }
             }
             
@@ -100,9 +101,7 @@
                 .meal-item{
                     width: 100%;
                     display: flex;
-                    flex-direction: row;
-                    font-family: 'Sriracha', cursive;
-                    color: #331800;
+                    flex-direction: row;    
                     justify-content: space-between;
                     
                     .meal-item__name{
