@@ -185,6 +185,10 @@ body {
   margin-right: 20px;
 }
 
+.main-container-menu p {
+  font-size: 1.2em;
+}
+
 .main-container-menu {
   display: flex;
   flex-direction: column;
@@ -282,6 +286,9 @@ body {
 .main-container-menu .menu .meals .meal-items .meal-item .meal-item__name {
   margin: 5px;
 }
+.main-container-menu .menu .meals .meal-items .meal-item .meal-item__price {
+  font-weight: bold;
+}
 .main-container-menu .menu .name-restaurant-inline {
   display: flex;
   flex-direction: row;
@@ -305,6 +312,53 @@ body {
   color: #331800;
   font-size: 2em;
   text-align: center;
+}
+
+.main-container-menu p {
+  font-family: "Rochester", cursive;
+  font-weight: normal;
+}
+
+/* COULEUR DE FOND ET TITRES DU MENU */
+.main-container-menu .menu {
+  background: #fff3f9;
+}
+.main-container-menu .menu .name-restaurant h1 {
+  font-family: "Rochester", cursive;
+  background: linear-gradient(90deg, #f57700 0%, #b35d01 29%, #5b31bf 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 3em;
+}
+
+/* PARTIES DU MENU GENERIQUE */
+.main-container-menu .menu .meals .meals__meal-separation {
+  width: 100%;
+}
+.main-container-menu .menu .meals .meals__meal-separation p {
+  font-weight: bold;
+}
+
+.main-container-menu .menu .meals--1 .meals__meal-separation .line-separation {
+  filter: invert(56%) sepia(15%) saturate(3182%) hue-rotate(350deg) brightness(97%) contrast(85%);
+}
+.main-container-menu .menu .meals--2 .meals__meal-separation .line-separation {
+  filter: invert(32%) sepia(17%) saturate(4053%) hue-rotate(250deg) brightness(95%) contrast(87%);
+}
+.main-container-menu .menu .meals--3 .meals__meal-separation .line-separation {
+  filter: invert(13%) sepia(29%) saturate(4302%) hue-rotate(208deg) brightness(91%) contrast(92%);
+}
+
+.main-container-menu .menu .meals--1 p {
+  color: orange;
+}
+
+.main-container-menu .menu .meals--2 p {
+  color: purple;
+}
+
+.main-container-menu .menu .meals--3 p {
+  color: blue;
 }
 
 /*# sourceMappingURL=menu_2.css.map */

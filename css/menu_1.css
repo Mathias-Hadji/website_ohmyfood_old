@@ -185,6 +185,10 @@ body {
   margin-right: 20px;
 }
 
+.main-container-menu p {
+  font-size: 1.2em;
+}
+
 .main-container-menu {
   display: flex;
   flex-direction: column;

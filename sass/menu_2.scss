@@ -1,5 +1,107 @@
 @import "menu_1.scss";
 
 
+.main-container-menu{
+    p{
+        font-family: 'Rochester', cursive;
+        font-weight: normal;
+    }
+}
 
 
+/* COULEUR DE FOND ET TITRES DU MENU */
+
+.main-container-menu{
+    .menu{
+        background: rgb(255, 243, 249);
+
+        .name-restaurant{
+            h1{
+                font-family: 'Rochester', cursive;
+                background: linear-gradient(90deg, rgba(245,119,0,1) 0%, rgba(179,93,1,1) 29%, rgba(91,49,191,1) 100%);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                font-size: 3em;
+            }
+        }
+    }
+}
+
+
+/* PARTIES DU MENU GENERIQUE */
+
+
+.main-container-menu{
+    .menu{
+        .meals{
+            .meals__meal-separation{
+                width: 100%;
+                p{
+                    font-weight:bold;
+                }             
+            }
+        }
+    }
+}
+
+
+.main-container-menu{
+    .menu{
+        .meals--1{
+            .meals__meal-separation{
+                .line-separation{
+                    filter: invert(56%) sepia(15%) saturate(3182%) hue-rotate(350deg) brightness(97%) contrast(85%);
+                }
+            }
+        }
+        .meals--2{
+            .meals__meal-separation{
+                .line-separation{
+                    filter: invert(32%) sepia(17%) saturate(4053%) hue-rotate(250deg) brightness(95%) contrast(87%);
+                }
+            }
+        }
+        .meals--3{
+            .meals__meal-separation{
+                .line-separation{
+                    filter: invert(13%) sepia(29%) saturate(4302%) hue-rotate(208deg) brightness(91%) contrast(92%);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+.main-container-menu{
+    .menu{
+        .meals--1{
+            p{
+                color:orange;
+            }
+        }
+    }
+}
+
+
+.main-container-menu{
+    .menu{
+        .meals--2{
+            p{
+                color:purple;
+            }
+        }
+    }
+}
+
+.main-container-menu{
+    .menu{
+        .meals--3{
+            p{
+                color:blue;
+            }
+        }
+    }
+}
