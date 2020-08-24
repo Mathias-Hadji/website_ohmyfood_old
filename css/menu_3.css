@@ -90,15 +90,14 @@ body {
 /* BLOC MENU 1 */
 .menu-prev--menu1 {
   background: #fcd7ce;
+  color: #331800;
 }
 .menu-prev--menu1 h1 {
   font-family: "Oleo Script", cursive;
-  color: #331800;
 }
 .menu-prev--menu1 p {
   font-family: "Sriracha", cursive;
   text-transform: uppercase;
-  color: #331800;
 }
 
 /* BLOC MENU 2 */
@@ -257,14 +256,13 @@ body {
   width: 80%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   font-size: 1.4em;
   margin-bottom: 20px;
   justify-content: space-between;
   align-items: center;
 }
 .main-container-menu .menu .meals .meal-separation .meal-separation__line {
-  width: 250px;
+  flex: 2;
   height: 20px;
   filter: invert(10%) sepia(50%) saturate(2492%) hue-rotate(19deg) brightness(93%) contrast(102%);
 }

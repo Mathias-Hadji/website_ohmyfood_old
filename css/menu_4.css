@@ -309,4 +309,31 @@ body {
   text-align: center;
 }
 
-/*# sourceMappingURL=menu_1.css.map */
+.main-container-menu p {
+  font-family: "Kalam", cursive;
+  font-weight: normal;
+}
+
+/* COULEUR DE FOND ET TITRES DU MENU */
+.main-container-menu .menu {
+  background: white;
+}
+.main-container-menu .menu .name-restaurant h1 {
+  font-family: "Kaushan Script", cursive;
+  background: linear-gradient(90deg, #004404 0%, #bfffbe 100%, #006f21 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 4em;
+}
+
+/* PARTIES DU MENU GENERIQUE */
+.main-container-menu .menu .meals .meal-separation {
+  width: 100%;
+}
+
+/* COULEURS DES LIGNES DE SEPARATION */
+.main-container-menu .menu .meals .meal-separation .meal-separation__line {
+  filter: invert(51%) sepia(96%) saturate(356%) hue-rotate(93deg) brightness(90%) contrast(89%);
+}
+
+/*# sourceMappingURL=menu_4.css.map */

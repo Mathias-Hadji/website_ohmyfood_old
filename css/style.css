@@ -90,15 +90,14 @@ body {
 /* BLOC MENU 1 */
 .menu-prev--menu1 {
   background: #fcd7ce;
+  color: #331800;
 }
 .menu-prev--menu1 h1 {
   font-family: "Oleo Script", cursive;
-  color: #331800;
 }
 .menu-prev--menu1 p {
   font-family: "Sriracha", cursive;
   text-transform: uppercase;
-  color: #331800;
 }
 
 /* BLOC MENU 2 */
