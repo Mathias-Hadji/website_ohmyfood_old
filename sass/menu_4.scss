@@ -35,7 +35,7 @@
     .menu{
         .meals{
             .meal-separation{
-                width: 100%;           
+                width: 100%;
             }
         }
     }
@@ -48,7 +48,10 @@
     .menu{
         .meals{
             .meal-separation{
-                .meal-separation__line{
+                .meal-separation__line-left{
+                    filter: invert(51%) sepia(96%) saturate(356%) hue-rotate(93deg) brightness(90%) contrast(89%);
+                }
+                .meal-separation__line-right{
                     filter: invert(51%) sepia(96%) saturate(356%) hue-rotate(93deg) brightness(90%) contrast(89%);
                 }
             }
@@ -56,4 +59,16 @@
     }
 }
 
+
+.main-container-menu{
+    .menu{
+        .meals{
+            .meal-separation{
+                .meal-separation__line-right{
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+}
 

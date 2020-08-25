@@ -48,22 +48,34 @@
     .menu{
         .meals--1{
             .meal-separation{
-                .meal-separation__line{
+                .meal-separation__line-left{
                     filter: invert(6%) sepia(55%) saturate(5133%) hue-rotate(244deg) brightness(86%) contrast(100%);
+                }
+                .meal-separation__line-right{
+                    filter: invert(6%) sepia(55%) saturate(5133%) hue-rotate(244deg) brightness(86%) contrast(100%);
+                    transform: rotate(180deg);
                 }
             }
         }
         .meals--2{
             .meal-separation{
-                .meal-separation__line{
+                .meal-separation__line-left{
                     filter: invert(18%) sepia(69%) saturate(4593%) hue-rotate(247deg) brightness(85%) contrast(95%);
+                }
+                .meal-separation__line-right{
+                    filter: invert(18%) sepia(69%) saturate(4593%) hue-rotate(247deg) brightness(85%) contrast(95%);
+                    transform: rotate(180deg);
                 }
             }
         }
         .meals--3{
             .meal-separation{
-                .meal-separation__line{
+                .meal-separation__line-left{
                     filter: invert(55%) sepia(39%) saturate(719%) hue-rotate(137deg) brightness(91%) contrast(102%);
+                }
+                .meal-separation__line-right{
+                    filter: invert(55%) sepia(39%) saturate(719%) hue-rotate(137deg) brightness(91%) contrast(102%);
+                    transform: rotate(180deg);
                 }
             }
         }

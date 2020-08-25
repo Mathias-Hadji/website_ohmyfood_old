@@ -261,7 +261,12 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.main-container-menu .menu .meals .meal-separation .meal-separation__line {
+.main-container-menu .menu .meals .meal-separation .meal-separation__line-left {
+  flex: 2;
+  height: 20px;
+  filter: invert(10%) sepia(50%) saturate(2492%) hue-rotate(19deg) brightness(93%) contrast(102%);
+}
+.main-container-menu .menu .meals .meal-separation .meal-separation__line-right {
   flex: 2;
   height: 20px;
   filter: invert(10%) sepia(50%) saturate(2492%) hue-rotate(19deg) brightness(93%) contrast(102%);
